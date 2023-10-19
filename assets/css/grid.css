@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    background-color: #212121;
+}
+
+/*-------------------------------------------------------
+------------------------ Nav Bar ------------------------
+---------------------------------------------------------*/
+.nav-container {
+    display: flex;
+}
+
+.nav-container,
+.nav-bar {
+    /* position: fixed; (deixar fixado)
+    top: 0;     (posicionar)
+    left: 0;    (posicionar)
+    z-index: 1; (da prioridade na tela) */
+    width: 100%;
+}
+
+.nav-container img {
+    margin-left: 253px;
+    z-index: 1;
+    width: 127px;
+    height: 127px;
+}
+
+.nav-bar {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    margin-right: 286px;
+    /* margin-left: 261px; */
+    text-shadow: 1px 1px 2px gray;
+}
+
+.nav-bar li {
+    list-style: none;
+    display: inline;
+}
+
+.nav-bar li a {
+    padding: 50px 50px;
+    /* tamanho da pagina  --  distancia dos <a> */
+    text-decoration: none;
+    /* tirar o underline */
+    color: rgb(160, 160, 160);
+    display: inline-block;
+    margin-right: -3px;
+    font-size: 15px;
+    letter-spacing: 0.60;
+}
+
+.nav-bar li a:hover {
+    color: white;
+}
+
+
+
+/*-------------------------------------------------------
+----------------------- PRODUTOS ------------------------
+---------------------------------------------------------*/
+
+.main-container h2{
+    font-size: 40px;
+    color: #DADADA;
+    text-shadow: 2px 2px 3px gray;
+    margin-top: 90px;
+    margin-bottom: 130px;
+    margin-left: 278px;
+}
+
+.container h3 {
+    margin-top: 30px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.p1,
+.p2,
+.p3,
+.p4,
+.p5,
+.p6,
+.p7,
+.p8 {
+    display: flex;
+    flex-direction: column;
+    color: #a1a1a1;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 30px;
+    /* column-gap: 10px; */
+    margin-left: 100px;
+    padding: 10px;
+    grid-template-areas:
+        "p1 p2 p3 p4"
+        "p5 p6 p7 p8";
+}
+
+.container img {
+    margin-top: 1px;
+    margin-bottom: 10px;
+    margin-left: 30%;
+    width: 125px;
+    height: 125px;
+}
+
+.container p span {
+    font-size: 25px;
+    font-weight: 700;
+    color: #c000c7;
+}
+
+.container a button {
+    border: 0px solid rgb(148, 148, 148);
+    color: white;
+    background-color: #6c0070;
+    width: 112px;
+    margin-top: 26px;
+    height: 43px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.container a button:hover {
+    background-color: #88008d;
+}
+
+.p1 {
+    height: 350px;
+    width: 300px;
+    grid-area: p1;
+    background-color: rgba(48, 48, 48, 0.71);
+    border-radius: 20px;
+}
+
+.p2 {
+    height: 350px;
+    width: 300px;
+    grid-area: p2;
+    background-color: rgba(48, 48, 48, 0.71);
+    border-radius: 20px;
+}
+
+.p3 {
+    height: 350px;
+    width: 300px;
+    grid-area: p3;
+    background-color: rgba(48, 48, 48, 0.71);
+    border-radius: 20px;
+}
+
+.p4 {
+    border-radius: 20px;
+    height: 350px;
+    width: 300px;
+    grid-area: p4;
+    background-color: rgba(48, 48, 48, 0.71);
+}
+
+.p5 {
+    border-radius: 20px;
+    height: 350px;
+    width: 300px;
+    grid-area: p5;
+    background-color: rgba(48, 48, 48, 0.71);
+}
+
+.p6 {
+    border-radius: 20px;
+    height: 350px;
+    width: 300px;
+    grid-area: p6;
+    background-color: rgba(48, 48, 48, 0.71);
+}
+
+.p7 {
+    border-radius: 20px;
+    height: 350px;
+    width: 300px;
+    grid-area: p7;
+    background-color: rgba(48, 48, 48, 0.71);
+}
+
+.p8 {
+    height: 350px;
+    width: 300px;
+    grid-area: p8;
+    border-radius: 20px;
+    background-color: rgba(48, 48, 48, 0.71);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------
+-------------------------- Footer -----------------------
+---------------------------------------------------------*/
+
+.footer-main-container {
+    display: flex;
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    height: 100px;
+    background-color: rgba(19, 19, 19, 0.73);
+    color: #b6b5b5;
+    align-items: center;
+    justify-content: center;
+}
